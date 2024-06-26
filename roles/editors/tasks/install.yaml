@@ -1,0 +1,8 @@
+---
+
+- name: Install editors
+  dnf:
+    pkg:
+      - vim-enhanced
+      - emacs
+    state: present

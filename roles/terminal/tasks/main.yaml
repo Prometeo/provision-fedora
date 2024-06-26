@@ -1,0 +1,9 @@
+---
+
+- import_tasks: install.yaml
+  tags:
+    - terminal
+
+- import_tasks: config.yaml
+  tags:
+    - terminal

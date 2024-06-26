@@ -1,0 +1,44 @@
+---
+
+- name: create fonts directory
+  become: false
+  file:
+    path: "{{ fonts_dir }}"
+    state: directory
+
+- name: Create FiraCode directory
+  become: false
+  file:
+    path: "{{ fonts_dir }}/FiraCode"
+    state: directory
+
+- name: Download FiraCode nerd font
+  get_url:
+    url: https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
+    dest: "{{ fonts_dir }}/FiraCode"
+
+- name: Install FiraCode font
+  unarchive:
+    src:  "{{ fonts_dir }}/FiraCode/FiraCode.zip"
+    dest: "{{ fonts_dir }}/FiraCode/"
+
+- name: Create Hack nerd directory
+  become: false
+  file:
+    path: "{{ fonts_dir }}/Hack"
+    state: directory
+
+- name: Download Hack nerd font
+  get_url:
+    url: https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip
+    dest: "{{ fonts_dir }}/Hack"
+
+- name: Install Hack nerd font
+  unarchive:
+    src:  "{{ fonts_dir }}/Hack/Hack.zip"
+    dest: "{{ fonts_dir }}/Hack/"
+
+- name: Install fonts
+  command: fc-cache -v
+
+  

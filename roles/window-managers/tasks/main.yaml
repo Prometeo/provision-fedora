@@ -1,0 +1,11 @@
+---
+
+- import_tasks: install.yaml
+  tags:
+    - qtile
+    - windows-managers
+
+- import_tasks: config.yaml
+  tags:
+    - qtile
+    - windows-managers

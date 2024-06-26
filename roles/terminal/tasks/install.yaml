@@ -1,0 +1,22 @@
+---
+
+- name: Install terminal utilitaries
+  dnf:
+    pkg:
+      - alacritty
+      - bat
+      - ripgrep
+      - feh
+      - picom
+      - xscreensaver
+      - ImageMagick
+      - btop
+    state: present
+
+- name: Install starship
+  become: false
+  command: "cargo install starship"
+
+- name: Install zellij
+  become: false
+  command: "cargo install zellij"

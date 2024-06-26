@@ -1,0 +1,7 @@
+---
+
+- name: Create qtile.desktop file
+  become: true
+  template:
+    src: templates/qtile.desktop
+    dest: "/usr/share/xsessions/qtile.desktop"

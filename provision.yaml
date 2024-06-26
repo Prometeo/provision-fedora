@@ -1,0 +1,24 @@
+- hosts: all
+  vars:
+    home_path: /home/prometeo
+    local_user: prometeo
+    release: 38
+    fonts_dir: /home/prometeo/.local/share/fonts/
+    sshkey: "{{ home_path }}/.ssh/id_rsa"
+    vars:
+    my_key_list:
+      - https://rpmfusion.org/keys?action=AttachFile&do=get&target=RPM-GPG-KEY-rpmfusion-free-fedora-2020
+      - https://rpmfusion.org/keys?action=AttachFile&do=get&target=RPM-GPG-KEY-rpmfusion-nonfree-fedora-2020
+
+  become: true
+  roles:
+    - role: update
+    - role: basics
+    - role: programming-languages
+    - role: terminal
+    - role: podman
+    - role: editors
+    - role: dotfiles
+    - role: games
+    - role: communication
+    - role: window-managers
