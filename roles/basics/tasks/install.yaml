@@ -20,6 +20,7 @@
       - make
       - cmake
       - links
+      - pamixer
       - stow
       - rofi
       - util-linux-user

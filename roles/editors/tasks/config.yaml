@@ -9,7 +9,7 @@
   become: false
   when: not emacs_config.stat.exists
   git:
-    repo: git@gitlab.com:Prometeo136/my_emacs_config.git
+    repo: git@github.com:Prometeo/emacs-config.git
     dest: "{{ home_path }}/.emacs.d"
     recursive: true
     key_file: "{{ sshkey }}"

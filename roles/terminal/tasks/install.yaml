@@ -17,6 +17,14 @@
   become: false
   command: "cargo install starship"
 
+#- name: Install zellij
+#  become: false
+#  command: "cargo install --locked zellij"
+
 - name: Install zellij
   become: false
-  command: "cargo install zellij"
+  command: "cargo install zoxide"
+
+- name: Install zellij
+  become: false
+  command: "cargo install lsd"

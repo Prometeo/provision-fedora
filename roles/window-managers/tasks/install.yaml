@@ -11,3 +11,11 @@
   become: true
   args:
     chdir: "{{ home_path }}/qtile/"
+
+- name: Install Hyprland
+  pkg:
+    - hyprland
+    - waybar
+    - blueman
+    - swaylock
+    - wlogout

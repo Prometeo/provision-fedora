@@ -2,7 +2,7 @@
   vars:
     home_path: /home/prometeo
     local_user: prometeo
-    release: 38
+    release: 40
     fonts_dir: /home/prometeo/.local/share/fonts/
     sshkey: "{{ home_path }}/.ssh/id_rsa"
     vars:

@@ -9,7 +9,7 @@
   become: false
   when: not dotfiles_dir.stat.exists
   git:
-    repo: git@gitlab.com:Prometeo136/dotfiles.git
+    repo: git@github.com:Prometeo/dotfiles.git
     dest: "{{ home_path }}/dotfiles"
     recursive: true
     key_file: "{{ sshkey }}"
