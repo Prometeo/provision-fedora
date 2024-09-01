@@ -23,3 +23,11 @@
     dest: "{{ home_path }}/.pyenv/plugins/pyenv-virtualenv"
   tags:
     - python
+
+- name: Install sbcl
+  dnf:
+    pkg:
+      - sbcl
+    state: present
+  tags:
+    - lisp
