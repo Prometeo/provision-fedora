@@ -28,3 +28,7 @@
 - name: Install zellij
   become: false
   command: "cargo install lsd"
+
+- name: Install harlequin
+  become: false
+  command: "pip install harlequin"
