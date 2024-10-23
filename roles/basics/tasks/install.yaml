@@ -26,4 +26,5 @@
       - util-linux-user
       - java-11-openjdk-devel
       - fzf
+      - direnv
     state: present
