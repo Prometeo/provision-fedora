@@ -29,6 +29,7 @@
       - direnv
       - thunar
       - ranger
+      - fuzzel
     state: present
 
 - name: Install kickoff
