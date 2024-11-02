@@ -27,4 +27,10 @@
       - java-11-openjdk-devel
       - fzf
       - direnv
+      - thunar
+      - ranger
     state: present
+
+- name: Install kickoff
+  become: false
+  command: "cargo install lsd"
