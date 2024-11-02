@@ -17,3 +17,9 @@
 - name: Run emacs server
   become: false
   shell: systemctl --user enable --now emacs
+
+- name: Insert custom emacs desktop file
+  become: true
+  template:
+    src: templates/emacs.desktop
+    dest: "/usr/share/applications/emacs.desktop"
