@@ -1,9 +1,9 @@
 ---
 
-- import_tasks: install.yaml
-  tags:
-    - docker
+# - import_tasks: install.yaml
+#   tags:
+#     - docker
 
-- import_tasks: config.yaml
-  tags:
-    - docker
+# - import_tasks: config.yaml
+#   tags:
+#     - docker

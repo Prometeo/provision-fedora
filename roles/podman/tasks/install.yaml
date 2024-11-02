@@ -3,5 +3,5 @@
 - name: Install podman
   dnf:
     pkg:
-      # - podman
+      - podman
       - podman-compose

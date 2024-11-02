@@ -13,3 +13,7 @@
     dest: "{{ home_path }}/.emacs.d"
     recursive: true
     key_file: "{{ sshkey }}"
+
+- name: Run emacs server
+  become: false
+  shell: systemctl --user enable --now emacs
