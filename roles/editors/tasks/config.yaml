@@ -14,10 +14,6 @@
     recursive: true
     key_file: "{{ sshkey }}"
 
-- name: Run emacs server
-  become: false
-  shell: systemctl --user enable --now emacs
-
 - name: Insert custom emacs desktop file
   become: true
   template:

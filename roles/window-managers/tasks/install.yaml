@@ -1,22 +1,11 @@
 ---
 
-- name: Clone qtile repo
-  become: false
-  git:
-    repo: https://github.com/qtile/qtile.git
-    dest: "{{ home_path }}/qtile"
-
-- name: Install qtile
-  command: pip install .
-  become: true
-  args:
-    chdir: "{{ home_path }}/qtile/"
-
 - name: Install Hyprland
-  pkg:
-    - hyprland
-    - waybar
-    - blueman
-    - swaylock
-    - wlogout
-    - hyprlock
+  dnf:
+    pkg:
+      - hyprland
+      - waybar
+      - blueman
+      - swaylock
+      - wlogout
+      - swaybg

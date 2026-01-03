@@ -2,7 +2,7 @@
   vars:
     home_path: /home/prometeo
     local_user: prometeo
-    release: 40
+    release: 43
     fonts_dir: /home/prometeo/.local/share/fonts/
     sshkey: "{{ home_path }}/.ssh/id_rsa"
     vars:
@@ -16,7 +16,7 @@
     - role: basics
     - role: programming-languages
     - role: terminal
-    - role: podman
+    - role: docker
     - role: editors
     - role: dotfiles
     - role: games
