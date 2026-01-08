@@ -29,11 +29,22 @@
       - util-linux-user
       - java
       - fzf
+      - fd
       - python3-pip
+      - p7zip
+      - p7zip-plugins
       - direnv
       - thunar
       - ranger
       - flameshot
       - fuzzel
+      - xclip
+      - exif
+      - exiftool
       - swaync
     state: present
+
+
+  - name: Install resvg
+    become: false
+    command: "cargo install resvg"
