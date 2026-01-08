@@ -23,6 +23,8 @@
       - links
       - pamixer
       - stow
+      - go
+      - helix
       - rofi
       - util-linux-user
       - java
