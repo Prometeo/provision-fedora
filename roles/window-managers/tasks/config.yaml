@@ -5,3 +5,9 @@
   template:
     src: templates/qtile.desktop
     dest: "/usr/share/xsessions/qtile.desktop"
+
+
+- name: Enable dank material shell
+  service:
+    name: dsearch
+    enabled: yes
