@@ -32,3 +32,11 @@
 - name: Install harlequin
   become: false
   command: "pip install harlequin"
+
+- name: install navi
+  become: false
+  command: "cargo install navi"
+
+- name: install cargo-seek
+  become: false
+  command: "cargo install cargo-seek"

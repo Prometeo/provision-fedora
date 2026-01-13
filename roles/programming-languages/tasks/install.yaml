@@ -4,6 +4,7 @@
   dnf:
     pkg:
       - python3-virtualenv
+      - ipython
     state: present
   tags:
     - python

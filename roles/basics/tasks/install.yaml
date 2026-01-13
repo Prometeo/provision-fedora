@@ -29,6 +29,7 @@
       - util-linux-user
       - java
       - fzf
+      - shellcheck
       - fd
       - python3-pip
       - p7zip
