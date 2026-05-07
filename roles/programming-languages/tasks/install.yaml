@@ -32,3 +32,11 @@
     state: present
   tags:
     - lisp
+
+- name: Install bash-server language
+  dnf:
+    pkg:
+      - nodejs-bash-language-server
+    state: present
+    tags:
+      - bash
